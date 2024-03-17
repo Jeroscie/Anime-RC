@@ -1,5 +1,4 @@
-//Test fetch
-fetch('https://api.anime-dex.workers.dev/recent/1') 
+fetch('/api/recent/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.trending__product .row');
@@ -51,7 +50,8 @@ fetch('https://api.anime-dex.workers.dev/recent/1')
   })
   .catch(error => console.error('Error fetching recent anime data:', error));
 
-fetch('https://testaopi.vercel.app/api/popular/1')
+
+fetch('/api/popular/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.popular__product .row');
