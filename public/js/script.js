@@ -1,4 +1,4 @@
-fetch('https://api.anime-dex.workers.dev/recent/1')
+fetch('/recent/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.trending__product .row');
