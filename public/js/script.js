@@ -1,5 +1,5 @@
 //Test fetch
-fetch('https://api.anime-dex.workers.dev/recent/1') 
+fetch('https://anime-rc-yypx.vercel.app/api/recent/1') 
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.trending__product .row');
