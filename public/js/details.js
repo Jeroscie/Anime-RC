@@ -8,7 +8,7 @@
 
         function fetchAnimeDetails() {
             const animeTitle = getParam('anime'); 
-            const apiUrl = `https://api.anime-dex.workers.dev/anime/${animeTitle}`;
+            const apiUrl = `https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/anime/${animeTitle}`;
     
             fetch(apiUrl)
                 .then(response => response.json())

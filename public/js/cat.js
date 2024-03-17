@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = "https://testaopi.vercel.app/api/popular/";
+    const apiUrl = "https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/popular/";
     let pageNumber = 1; 
     const paginationContainer = document.getElementById('paginationContainer');
     const loader = document.getElementById('preloder'); 
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updatePaginationLinks(pageNumber); 
 });
 
-fetch('https://api.anime-dex.workers.dev/upcoming/1')
+fetch('https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/upcoming/1')
     .then(response => response.json())
     .then(data => {
         const container = document.querySelector('.product__sidebar__comment');
@@ -165,7 +165,7 @@ fetch('https://api.anime-dex.workers.dev/upcoming/1')
 
 //recent
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = "https://api.anime-dex.workers.dev/recent/"; 
+    const apiUrl = "https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/recent/"; 
     const recentAnimeContainer = document.getElementById('recentAnimeContainer');
 
     function fetchData(page) {

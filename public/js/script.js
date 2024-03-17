@@ -1,5 +1,5 @@
 //Test fetch
-fetch('https://proxy.techzbots1.workers.dev/?u=https://anime-rc-yypx.vercel.app/api/recent/1') 
+fetch('https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/recent/1') 
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.trending__product .row');
@@ -51,7 +51,7 @@ fetch('https://proxy.techzbots1.workers.dev/?u=https://anime-rc-yypx.vercel.app/
   })
   .catch(error => console.error('Error fetching recent anime data:', error));
 
-fetch('https://proxy.techzbots1.workers.dev/?u=https://api.anime-dex.workers.dev/gogoPopular/1')
+fetch('https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/popular/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.popular__product .row');
@@ -110,7 +110,7 @@ fetch('https://proxy.techzbots1.workers.dev/?u=https://api.anime-dex.workers.dev
   .catch(error => console.error('Error fetching popular anime data:', error));
 
 // test upcoming fetch
-fetch('https://proxy.techzbots1.workers.dev/?u=https://api.anime-dex.workers.dev/upcoming/1')
+fetch('https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/upcoming/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.product__sidebar__comment');

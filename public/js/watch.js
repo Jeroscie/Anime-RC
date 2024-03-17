@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const apiUrl = `https://api.anime-dex.workers.dev/api/episode/${encodeURIComponent(episodeTitle)}`;
+        const apiUrl = `https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/episode/${encodeURIComponent(episodeTitle)}`;
 
         fetch(apiUrl)
             .then(response => {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     function fetchEpisodeList(animeName) {
-        const apiUrl = `https://api.anime-dex.workers.dev/anime/${encodeURIComponent(animeName)}`;
+        const apiUrl = `https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/anime/${encodeURIComponent(animeName)}`;
 
         fetch(apiUrl)
             .then(response => response.json())

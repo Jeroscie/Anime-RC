@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to fetch search results
     function fetchSearchResults(query) {
-        fetch(`https://api.anime-dex.workers.dev/search/${query}`)
+        fetch(`https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/search?query=${query}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchSearchResults(query);
 });
 
-fetch('https://api.anime-dex.workers.dev/upcoming/1')
+fetch('https://worker-curly-feather-750f.jhonrickcieloe.workers.dev/?u=https://testaopi.vercel.app/api/upcoming/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.product__sidebar__comment');
