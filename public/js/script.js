@@ -1,5 +1,5 @@
 //Test fetch
-fetch('https://anime-rc-yypx.vercel.app/api/recent/1') 
+fetch('https://proxy.techzbots1.workers.dev/?u=https://anime-rc-yypx.vercel.app/api/recent/1') 
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.trending__product .row');
@@ -51,7 +51,7 @@ fetch('https://anime-rc-yypx.vercel.app/api/recent/1')
   })
   .catch(error => console.error('Error fetching recent anime data:', error));
 
-fetch('https://api.anime-dex.workers.dev/gogoPopular/1')
+fetch('https://proxy.techzbots1.workers.dev/?u=https://api.anime-dex.workers.dev/gogoPopular/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.popular__product .row');
@@ -110,7 +110,7 @@ fetch('https://api.anime-dex.workers.dev/gogoPopular/1')
   .catch(error => console.error('Error fetching popular anime data:', error));
 
 // test upcoming fetch
-fetch('https://api.anime-dex.workers.dev/upcoming/1')
+fetch('https://proxy.techzbots1.workers.dev/?u=https://api.anime-dex.workers.dev/upcoming/1')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.product__sidebar__comment');
